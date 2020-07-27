@@ -1,0 +1,174 @@
+@import '../../styles/theme'
+
+.wrapper
+  width: 100%
+  height: 100%
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+
+.form-container
+  padding: 48px
+  width: 50%
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  background-color: $light-color
+
+  h1
+    text-align: right
+    color: $dark-color
+    margin-bottom: 30px
+
+    @include text-logo
+
+  h2
+    color: $text-color
+    text-align: center
+    margin-bottom: 30px
+
+    @include text-big
+
+  form
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: flex-start
+    margin-bottom: 15px
+
+    .input-wrapper
+      display: flex
+      flex-direction: column
+      align-items: start
+      width: 433px
+      margin-bottom: 18px
+
+      span
+        color: red
+
+      .error
+        border-bottom: 1px solid red
+
+    label
+      margin-bottom: 4px
+      text-align: left
+
+      @include text-small
+
+    input
+      width: 100%
+      height: 42px
+      border: none
+      border-bottom: 1px solid $text-color
+      margin-bottom: 5px
+
+    .helper-link
+      width: 433px
+      display: flex
+      flex-direction: row
+      justify-content: flex-end
+      margin-bottom: 30px
+
+      a
+        color: $text-color
+        text-decoration: none
+
+        @include text-small
+
+        &:hover
+          color: $dark-color
+
+    .button
+      width: 175px
+      height: 45px
+      background-color: $text-color
+      border-radius: 50px
+      border: none
+      color: $light-color
+      font-weight: bold
+      cursor: pointer
+
+      @include text-medium
+.disabled
+  opacity: 0.3
+
+.or
+  text-align: center
+  margin: 0 auto
+  margin-bottom: 28px
+  position: relative
+  color: $text-color
+
+  &:before
+    content: ''
+    width: 100px
+    height: 1px
+    background: $text-color
+    opacity: 0.7
+    position: absolute
+    right: 35px
+    top: 10px
+  &:after
+    content: ''
+    width: 100px
+    height: 1px
+    background: $text-color
+    opacity: 0.7
+    position: absolute
+    left: 35px
+    top: 10px
+
+.google-button-wrapper
+  width: 100%
+  display: flex
+  flex-direction: row
+  justify-content: center
+  margin-bottom: 20px
+
+.google-button
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+  width: 263px
+  height: 45px
+  border: none
+  background: #FFFFFF
+  box-shadow: 0px 3px 6px #00000029
+  border-radius: 100px
+  cursor: pointer
+
+  img
+    margin-right: 20px
+
+.sign-in-wrapper
+  width: 100%
+  display: flex
+  flex-direction: row
+  justify-content: center
+
+  p
+    color: $text-color
+    font-size: 16px
+
+  .sign-in-link
+    margin: 0 10px
+    color: $primary-color
+
+@media (max-width: $breakpoint-tablet)
+  .wrapper
+    flex-direction: column
+    justify-content: space-between
+
+    .form-container
+      width: 100%
+
+      .input-wrapper
+        width: 100%
+
+      .helper-link
+        width: 100%
+
+@media (max-width: $breakpoint-phone)
+  .form-container
+    padding: 20px

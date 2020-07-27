@@ -1,0 +1,72 @@
+@import '../../styles/theme'
+
+.slider-container
+  height: 100%
+  width: 50%
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  background: #A9C5BA
+
+.slide
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  margin-bottom: 30px
+
+  img
+    width: 65%
+    margin-bottom: 30px
+
+  h2
+    margin-bottom: 20px
+    color: $light-color
+
+    @include text-big
+
+  p
+    width: 60%
+    text-align: center
+    color: $light-color
+
+    @include text-medium
+
+.dots-wrapper, .rec-pagination
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+
+  .dots, .rec-dot
+    width: 12px
+    height: 11px
+    border-radius: 50%
+    background: #FFFFFF
+    margin: 0 6px
+    box-shadow: none
+
+    &:hover, &:focus
+      box-shadow: 0 0 1px 3px rgba(0,0,0,0.3)
+
+  .active, .rec-dot_active
+    width: 26px
+    border-radius: 50px
+    box-shadow: none
+
+    &:hover, &:focus, &:focus-within, &:active,
+      box-shadow: none
+
+@media (max-width: $breakpoint-tablet)
+  .slider-container
+    width: 100%
+    padding: 30px 10px
+
+    .slide
+      h2
+        text-align: center
+
+      p
+        width: 100%
+        text-align: center
