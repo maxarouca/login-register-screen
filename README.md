@@ -1,4 +1,17 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Login and Register Screen
+
+Login and registration screen developed using ReactJS, Typescript, Formik and Yup.
+
+![](public/images/screen.jpeg)
+
+## The technologies used
+
+- ReactJS
+- Typescript
+- Formik
+- Yup
+- React-elastic-carousel
+- React-google-login
 
 ## Available Scripts
 
