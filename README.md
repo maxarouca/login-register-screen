@@ -17,8 +17,9 @@ Login and registration screen developed using ReactJS, Typescript, Formik and Yu
 
 To start the project in a development environment, it will be necessary to have the NODE JS and Git installed.
 
-[https://nodejs.org/en/download/](NodeJS download link or installation instructions)
-[https://git-scm.com/downloads](Git Download link or installation instructions)
+[NodeJS download link or installation instructions](https://nodejs.org/en/download/)
+
+[Git Download link or installation instructions](https://git-scm.com/downloads)
 
 After installing NodeJS, you will need to clone the project in a folder on your computer.
 
